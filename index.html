@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffeeShop</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+ 
+     .navbar{
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 12;
+        
+        
+        .logo{
+            font-size: 24px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            color: #8B5F28;
+            font-weight: bolder;
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 60%;
+            }
+        }
+        .nav-link{
+            display: flex;
+            gap: 25px;
+            margin-right: 20px;
+            font-size: 19px;
+            li{
+                list-style: none;
+                color: black;
+                &:hover{
+                    color: #8B5F28;
+                }
+            }
+    }
+   }
+   .box-card{
+    margin: 20px 20px;
+    padding: 20px;
+   }
+   .contact{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 30px;
+   }
+
+</style>
+<body>
+   
+        <div class="navbar">
+            <div class="logo ">
+                <img src="https://img.favpng.com/9/2/5/cafe-logo-restaurant-png-favpng-QWCmJ3UDQBcTGA37udLgwYrE9.jpg" alt="Coffee Shop Logo">
+                Coffee Shop
+            </div>
+            <ul class="nav-link">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="box-card grid grid-cols-5 p-[50px] gap-3">
+           
+        </div>
+        <div class="modal hidden">
+
+        </div>
+   <footer class="bg-amber-100 w-[100%] h-[70px]">
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@coffeeshop.com</p>
+        <p>Phone: (123) 777 988</p>
+    </div>
+   </footer>
+</body>
+</html>
+<script src="script.js"></script>
